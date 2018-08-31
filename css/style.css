@@ -1,0 +1,127 @@
+body{
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: normal;
+    color: #000;
+    font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    background-color: #fff;
+}
+
+
+/* header */
+header{
+  width: 100%;
+  height: 100px;
+  position: relative; /* 相対配置 親の基点 */
+  opacity: 1;
+}
+
+header h1{
+    width: 130px;
+    height: 50px;
+    background-color: #FFF;
+    margin: 50px auto 20px;
+    transform: translateX(-20px);
+    /* text-align: center; */
+    /* position: absolute; /* 絶対配置 子の座標指定 */
+    /* left: calc(50% - 65px);
+    top: calc(45px); */
+
+}
+
+header nav{
+  width: 100%;
+  height: 64px;
+  /* position: relative;
+  top: 15px;
+  left: 0; */
+  /* bottom: 0; */
+  background-color: rgba(255,255,255,0.8);
+  /* transform: translateY(64px); */
+}
+
+header nav .container{
+    width: 1140px;
+    height: 64px;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+header nav ul{
+    width: 840px;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+header nav ul li a{
+    display: block; /* リンク領域を広げる */
+    /* height: 64px; */
+    /* line-height: 4.4; */
+    /* padding: 20px 1px; */
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-size: 15px;
+    color: #CCC;
+    letter-spacing: 0.1rem; */
+}
+
+header nav ul li a:hover img{
+    opacity: 0.2;
+}
+
+/* header nav ul a:active{
+    opacity: 0.2;
+} */
+
+/* a:link, a:visited{
+  color:#000;
+  text-decoration: none;
+}
+
+a:hover, a:active{
+  color:#827f7f;
+  text-decoration: none;
+} */
+
+.main{
+  position: relative;
+}
+
+#top{
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    /* background-color: #f4f4f4; */
+}
+
+#top h2 .slider{
+    width: 1000px;
+    height: 500px;
+    /* position: absolute; */
+    margin: auto;
+    left: 0;
+    top: 0;
+}
+.slick-track{
+    height: 500px;
+}
+.slide1{
+    background: url(../img/home_pachamama.png) center center no-repeat;
+    background-size: cover;
+}
+.slide2{
+    background: url(../img/home_children.png) center center no-repeat;
+    background-size: cover;
+}
+.slide3{
+    background: url(../img/home_concert.png) center center no-repeat;
+    background-size: cover;
+}
+
+#button h3{
+    position: absolute;
+    top: 450px;
+    left: 950px;
+}
