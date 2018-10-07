@@ -7,6 +7,7 @@ $(function(){
     // スライドショー
     $('.slider').slick({
         arrows: false, //スライド右と左の矢印。矢印表示自体はcssで
+        pauseOnFocus:false,
         autoplay: true,//自動再生
         adaptiveHeight: true,//高さの自動調整
         dots: true, //スライドしたの小さい丸。スライダ。丸の位置はslick-theme.cssの.slick-dotsを変える。色は要素検証でどこ変えればいいかわかる。
@@ -14,6 +15,7 @@ $(function(){
         fade:true, //スライドをフェードで切り替え
         speed:1500,
         pauseOnHover: false//ホバーしたときにスライドショー止まるか
+
 
     });
 

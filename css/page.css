@@ -7,16 +7,20 @@ body{
     background-color: #fff;
 }
 
-/* header */
-header{
-  width: 100%;
-  height: 10px;
-  /* position: relative; /* 相対配置 親の基点 */
-  opacity: 1;
-  /* display: none; */
+a:visited, a:link{
+    color: #000;
+    text-decoration: none;
 }
 
-.clone-nav{
+
+a:hover, a:active{
+    color: #ccc;
+    text-decoration: none;
+}
+
+
+
+.clone-nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -28,25 +32,13 @@ header{
 
   .is-show {
   transform: translateY(0);
-  background-color: rgba(255,255,255,0.95);
-  border-bottom: solid 1px #b5b3b3;
-  height: 64px;
-  width: 100%;
-  /* display: block;  */
-  line-height: 4.4;
-  padding: 0 1px;
-  /* color: #CCC; */
-  letter-spacing: 0.1rem;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
   }
-
 
 
 header nav{
   background-color: rgba(255,255,255,0.95);
   border-bottom: solid 1px #b5b3b3;
+  /* display: none; */
 }
 
 
@@ -67,97 +59,533 @@ header nav ul{
     /* margin-right: 1000px; */
 }
 
+header nav ul li{
+
+}
+
 header nav ul a{
     display: block; /* リンク領域を広げる */
     /* height: 64px; */
-    line-height: 4.4;
+    /* line-height: 4.4; */
     padding: 0 1px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    color: #CCC;
+    font-family: "Rounded Mplus 1c";
+    font-size: 13px;
+    font-weight: 500;
+    color: #4c4747;
     letter-spacing: 0.1rem;
+    text-decoration: none;
 }
 
-
-#top h1{
+/* #top h1{
   width: 130px;
   height: 60px;
   background-color: #FFF;
   margin: 50px auto 14px;
   transform: translateX(-20px);
-}
+} */
 
 #top h2{
     width: auto;
     height: 100%;
     background-color: #FFF;
     text-align: center;
+    margin: 80px auto 5px;
+}
+
+/* INTRODUCTION ----------------*/
+
+#overview{
+  background-color: rgb(240,239,239);
 
 }
 
+.overviewdiv{
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  margin: 20px auto;
+  margin-top: 90px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.overviewleft{
+  margin-left: 300px;
+  margin-right: 70px;
+}
+
+.overviewleft h2{
+    font-family: "Rounded Mplus 1c";
+    font-size: 22px;
+    font-weight: 500;
+    color: #4c4747;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+}
+
+.overviewleft h3{
+  margin-top: 20px;
+  line-height: 1.8em;
+}
+
+.overviewimg img{
+  margin-right: 300px;
+  padding-top: 50px;
+}
+
+/* #overview h2{
+  margin-right: 100px;
+  margin-right: 50%;
+} */
+
+#nagayama{
+  background-color: rgb(255, 255, 255);
+}
+
+.nagayamadiv{
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  margin: 20px auto;
+  /* margin-top: 90px; */
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.nagayamaimg img{
+  /* margin-le: ;ft: 300px; */
+  margin-left: 300px;
+  margin-top: 90px;
+}
+
+.nagayamaright{
+  margin-right: 300px;
+  margin-left: 70px;
+}
+
+.nagayamaright h2{
+    font-family: "Rounded Mplus 1c";
+    font-size: 22px;
+    font-weight: 500;
+    color: #4c4747;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+}
+
+.nagayamaright h3{
+  margin-top: 20px;
+  line-height: 1.8em;
+}
+
+  /* #nagayama h2{
+    margin-left: 100px;
+    margin-left: 50%;
+  } */
+
+
+
+/* CONCERT ----------------*/
 #concert {
   background-color: rgb(240,239,239);
 }
 
 #concert h2{
   text-align: center;
-  margin-top: 110px;
+  margin-top: 90px;
   padding-top: 120px;
-
+  font-family: "Rounded Mplus 1c";
+  font-size: 22px;
+  font-weight: 500;
+  color: #4c4747;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
 }
 
-#concert h3{
-  text-align: center;
+
+#concert .h3_1{
+  text-align: left;
   margin: 50px auto;
-  width: 900px;
-
+  width: 800px;
 }
 
-
+/* スライドショー */
 .slick{
-    width: 1000px;
-    height: 500px;
+    width: 800px;
+    /* height: 500px; */
     /* position: absolute; */
     margin: auto;
     left: 0;
     top: 0;
 }
 .slick-track{
-    height: 500px;
+    /* height: 500px; */
 }
 
 .thumbnail{
   margin: auto;
   width: 800px;
-  height: auto;
+  /* height: 250px; */
   left: 0;
   top: 0;
+  margin-top: 30px;
+
 }
 
 .thumbnail .slick-current{
- opacity: 0.3;
+ opacity: 1;
 }
 
-.slide1{
-    background: url(../img/2017/1.jpg) center center no-repeat;
-}
-.slide2{
-    background: url(../img/2017/2.jpg) center center no-repeat;
-}
-.slide3{
-    background: url(../img/2017/3.jpg) center center no-repeat;
-}
-.slide4{
-    background: url(../img/2017/4.jpg) center center no-repeat;
-}
-.slide5{
-    background: url(../img/2017/5.jpg) center center no-repeat;
-}
-.slide6{
-    background: url(../img/2017/6.jpg) center center no-repeat;
-}
-
-.thumbnail .slide1, .thumbnail .slide2{
+.slick .slide1 img, .slick .slide2 img, .slick .slide3 img, .slick .slide4 img, .slick .slide5 img, .slick .slide6 img, .slick .slide7 img, .slick .slide8 img, .slick .slide9 img, .slick .slide10 img{
   background-size: cover;
-  width: 550px;
+  width: 100%;
+  height: auto;
+}
+
+
+.thumbnail .slide1 img, .thumbnail .slide2 img, .thumbnail .slide3 img, .thumbnail .slide4 img, .thumbnail .slide5 img, .thumbnail .slide6 img, .thumbnail .slide7 img, .thumbnail .slide8 img, .thumbnail .slide9 img, .thumbnail .slide10 img{
+  /* background-size: cover; */
+  width: 128px;
+  /* height: auto; */
+}
+
+.slide-arrow{
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+}
+
+.prev-arrow{
+  left: -45px;
+  width: 0;
+  height: 0;
+  color:orange;
+}
+
+.next-arrow{
+  right: -30px;
+  width: 0;
+  height: 0;
+  color:orange;
+
+}
+
+.fas{
+  font-size: 30px;
+}
+
+.thumbnail .slick-slide:not(.slick-center) {
+  -webkit-filter: opacity(70%);
+  -moz-filter: opacity(70%);
+  -o-filter: opacity(70%);
+  -ms-filter: opacity(70%);
+  filter: opacity(70%);
+  transition: 0.2s linear;
+}
+
+#concert .h3_2{
+  text-align: left;
+  margin: 0px auto;
+  width: 800px;
+  margin-top: 50px;
+  padding-bottom: 120px;
+
+}
+
+/* 映画 -------------------*/
+#film {
+  background-color: rgb(255,255,255);
+
+}
+
+#film h2{
+  text-align: center;
+  /* margin-top: 90px; */
+  padding-top: 120px;
+  font-family: "Rounded Mplus 1c";
+  font-size: 22px;
+  font-weight: 500;
+  color: #4c4747;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+
+}
+
+#film h3{
+  text-align: left;
+  margin: 50px auto;
+  width: 900px;
+}
+
+/* .filmimg{
+  width: 800px;
+  left: 300px;
+} */
+
+.img1{
+  position: absolute;
+  transform:translateX(400px);
+}
+
+.img2{
+  position: absolute;
+  left: 250px;
+}
+
+.img3{
+    position: absolute;
+  transform:translateX(700px);
+  /* transform: translateY(-195px); */
+}
+
+.img4{
+    position: absolute;
+  transform:translateX(5000px);
+  transform: translateY(25px);
+  left: 900px;
+}
+
+.img5{
+    position: absolute;
+  transform:translateX(2200px);
+  transform: translateY(200px);
+  left: 600px;
+}
+
+.img6{
+    position: absolute;
+  transform:translateX(50px);
+  transform: translateY(205px);
+  left: 350px;
+}
+
+
+.img7{
+  position: absolute;
+  transform:translateX(1200px);
+  transform: translateY(200px);
+  left: 850px;
+  margin-bottom: 120px;
+}
+
+
+/* Action ----------------*/
+
+#event{
+  background-color: rgb(240,239,239);
+}
+
+.eventdiv{
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  margin: 20px auto;
+  margin-top: 90px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.eventleft{
+  margin-left: 300px;
+  margin-right: 100px;
+}
+
+.eventleft h2{
+    font-family: "Rounded Mplus 1c";
+    font-size: 22px;
+    font-weight: 500;
+    color: #4c4747;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+}
+
+.eventleft h3{
+  margin-top: 20px;
+  line-height: 1.8em;
+}
+
+.eventimg img{
+  margin-right: 300px;
+  margin-top: 0px;
+}
+
+#charity{
+  background-color: rgb(255, 255, 255);
+}
+
+.charitydiv{
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  margin: 0px auto;
+  /* margin-top: 90px; */
+  padding-top: 120px;
+  padding-bottom: 70px;
+}
+
+.charityimg img{
+  /* margin-le: ;ft: 300px; */
+  margin-left: 330px;
+  margin-top: 0px;
+}
+
+.charityright{
+  margin-right: 100px;
+  margin-left: 150px;
+}
+
+.charityright h3{
+  margin-top: 20px;
+  line-height: 1.8em;
+}
+
+.charityright h2{
+    font-family: "Rounded Mplus 1c";
+    font-size: 22px;
+    font-weight: 500;
+    color: #4c4747;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+}
+
+#book{
+  background-color: rgb(240,239,239);
+}
+
+#book h1{
+  font-family: "Rounded Mplus 1c";
+  font-size: 22px;
+  font-weight: 500;
+  color: #4c4747;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 90px;
+  padding-top: 120px;
+}
+
+.introtext h2{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.book1{
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  margin: 20px auto;
+  /* margin-top: 90px; */
+  padding-top: 0px;
+  margin-top: 60px;
+  padding-bottom: 50px;
+}
+
+.book1img img{
+  /* margin-left: 330px; */
+  margin-top: 50px;
+  margin-right: 300px;
+}
+
+.book1text h2{
+  margin-right: 100px;
+  margin-left: 300px;
+  text-align: left;
+}
+
+.book2{
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  margin: 20px auto;
+  /* margin-top: 90px; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.book2img img{
+  margin-left: 410px;
+  margin-top: 0px;
+}
+
+.book2text{
+  margin-right: 100px;
+  margin-left: 150px;
+}
+
+.book3{
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  margin: 20px auto;
+  /* margin-top: 90px; */
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.book3img img{
+  margin-right: 300px;
+  margin-top: 0px;
+}
+
+.book3text{
+  margin-right: 150px;
+  margin-left: 400px;
+}
+
+.book4{
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  margin: 20px auto;
+  /* margin-top: 90px; */
+  padding-top: 50px;
+  padding-bottom: 120px;
+}
+
+.book4img img{
+  margin-left: 420px;
+  margin-top: 0px;
+}
+
+.book4text{
+  margin-right: 100px;
+  margin-left: 150px;
+}
+
+#volunteer{
+  background-color: rgb(255, 255, 255);
+}
+
+.voldiv{
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  margin: 20px auto;
+  /* margin-top: 90px; */
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.volimg img{
+  /* margin-le: ;ft: 300px; */
+  margin-left: 330px;
+  margin-top: 50px;
+}
+
+.volright{
+  margin-right: 250px;
+  margin-left: 150px;
+}
+
+.volright h3{
+  margin-top: 20px;
+  line-height: 1.8em;
+}
+
+.volright h2{
+    font-family: "Rounded Mplus 1c";
+    font-size: 22px;
+    font-weight: 500;
+    color: #4c4747;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
 }
