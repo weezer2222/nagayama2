@@ -18,6 +18,7 @@ $(function(){
 
 
     });
+    });
 
 //     <script>　
 // $(document).ready(function(){
@@ -45,6 +46,11 @@ $(function(){
 //    slidesToShow:4,
 //  });
 
-
-
-});
+//ドロップダウン
+	$(function(){
+		$("ul.menu li").hover(function(){
+			$("ul.sub:not(:animated)", this).slideDown();
+		}, function(){
+			$("ul.sub",this).slideUp();
+		});
+	});

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Concert | Nagayama Children Fund</title>
+  <title>活動の紹介 | 永山こども基金</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
   <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
@@ -17,13 +17,28 @@
   <header>
     <nav>
       <div class="container">
-        <ul>
+        <ul class="menu">
           <li><a href="./index.html">ホーム</a></li>
-          <li><a href="./introduction.html">永山こども基金とは</a></li>
+          <li><a>永山こども基金とは</a>
+            <ul class="sub">
+              <li><a href="./introduction.html">永山こども基金について</a></li>
+              <li><a href="./introduction2.html">永山則夫さんについて</a></li>
+            </ul>
+          </li>
+
           <li><a href="./peru.html">ペルーのこどもたち</a></li>
-          <li><a href="./concert.html">活動内容</a></li>
+
+          <li class="subconcert"><a>活動内容</a>
+            <ul class="sub">
+              <li><a href="./concert.html">活動の紹介</a></li>
+              <li><a href="./concert2.html">過去のコンサート</a></li>
+            </ul>
+          </li>
+
           <li><a href="./join.html">参加・支援の方法</a></li>
-          <li><a href="mailto:nagayama@chehemmi.sakura.ne.jp">問い合わせ</a></li>
+
+          <li><a href="./news.html">お知らせ</a></li>
+
           <li><a href="https://www.facebook.com/nagayamakodomo/" target="_blank"><i class="fab fa-facebook"></i></a></li>
         </ul>
       </div>
@@ -93,15 +108,20 @@
 NPOクシ・プンク協会は、ペルーの働く子どもたちの発する声に耳を傾け、子どもたちを取り巻く状況を知り、彼らと議論する中で問題の解決に向けた活動を展開しています。同時に子どもたちの現状をホームページや映像を通して内外に伝えていく作業も続けています。
     </h3>
 
+  <div class="filmimgdiv">
     <div class="filmimg">
       <div class="img1"><img src="./img/concert_film1.png" alt=""></div>
       <div class="img2"><img src="./img/concert_film2.png" alt=""></div>
       <div class="img3"><img src="./img/concert_film3.png" alt=""></div>
       <div class="img4"><img src="./img/concert_film4.png" alt=""></div>
+    </div>
+    <div class="filmimg2">
       <div class="img5"><img src="./img/concert_film5.png" alt=""></div>
       <div class="img6"><img src="./img/concert_film6.png" alt=""></div>
       <div class="img7"><img src="./img/concert_film7.png" alt=""></div>
     </div>
+  </div>
+
 
   </section>
 
@@ -110,6 +130,7 @@ NPOクシ・プンク協会は、ペルーの働く子どもたちの発する�
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/main2.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>

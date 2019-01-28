@@ -41,7 +41,6 @@ header h1{
     font-family: "Rounded Mplus 1c";
     font-size: 26px;
     font-weight: 500;
-
     letter-spacing: 0.1rem;
     padding-bottom: 2px;
     transform: translate(20px);
@@ -63,13 +62,13 @@ header nav{
   /* transform: translateY(64px); */
 }
 
-header nav .container{
+/* header nav .container{
     width: 1140px;
     height: 64px;
     margin: 0 auto;
     display: flex;
 
-}
+} */
 
 header nav ul{
     width: 840px;
@@ -123,6 +122,7 @@ a:hover, a:active{
     width: 100%;
     padding: 30px 0;
     text-align: center;
+    z-index: 1;
 
     /* background-color: #f4f4f4; */
 }
@@ -131,11 +131,9 @@ a:hover, a:active{
 #top h2 .slider{
     width: 1000px;
     height: 500px;
-    /* position: absolute; */
     margin: auto;
     left: 0;
     top: 0;
-
 }
 .slick-track{
     height: 500px;
@@ -157,4 +155,112 @@ a:hover, a:active{
     position: absolute;
     top: 450px;
     left: 950px;
+}
+
+/* ドロップダウンメニュー-------------------- */
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+  z-index: 10;
+}
+ul.menu li {
+	/* float: left; */
+	position: relative;
+	margin: 0 0 0 1px;
+	/* padding: 5px; */
+	/* width: 100px; */
+	background-color: #fff;
+	display: block;
+  cursor: pointer;
+
+}
+ul.sub {
+	display: none;
+	position: absolute;
+	margin-left: -14px;
+  padding-top: 10px;
+  width: 190px;
+	/* padding: 0; */
+}
+
+li.subconcert ul.sub{
+  width: 150px;
+}
+
+ul.sub li a {
+	padding: 11px 5px 11px 15px;
+	/* margin-left: -5px; */
+	/* margin-right: -5px; */
+  /* width: 100px; */
+	margin-bottom: -5px;
+	display: block;
+	color: #4c4747;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+ul.sub li a:hover {
+	background: #FFA502;
+	text-decoration:none;
+}
+
+
+/* header nav ul li{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+} */
+
+/* li.introduction {
+    width: 400px;
+} */
+
+
+/* news box---------------------- */
+.newsbox{
+  position: relative;
+  width: 350px;
+  height: 80px;
+  background-color: #fff;
+  z-index: 20;
+  /* text-align: left; */
+  /* left: 225px; */
+  /* margin-bottom: 150px; */
+  bottom: 140px;
+  padding: 13px;
+  opacity: 0.8;
+  /* margin-left: 100px; */
+  margin: 0 auto;
+  transform: translateX(-300px);
+
+}
+
+
+.newsbox h3{
+  font-size: 14px;
+  margin-bottom: 5px;
+  text-decoration: underline solid #4c4747;
+}
+
+.newsbox p{
+  font-size: 11px;
+  margin-top: 8px;
+  text-decoration: none;
+
+}
+
+.newsbox a{
+  color: #000;
+  text-decoration: none;
+}
+
+.newsbox a:hover, .newsbox a:active{
+    color: #ccc;
+    text-decoration: none;
 }
