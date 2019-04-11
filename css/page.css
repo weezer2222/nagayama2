@@ -433,6 +433,8 @@ header nav ul a{
 
   .overviewimg img{
     padding-top: 30px;
+    width: 100%;
+
   }
 
 
@@ -458,7 +460,9 @@ header nav ul a{
 
   .partnerimg img{
     margin-left: 0px;
-    margin-top:40px
+    margin-top:40px;
+    width: 100%;
+
   }
 
   .partnerright h3{
@@ -653,6 +657,10 @@ header nav ul a{
     margin-top: 20px;
   }
 
+  .otaniimg img{
+    width: 100%;
+  }
+
   .nagayamadiv{
     padding-top: 55px;
     margin: 0px 15px 0px;
@@ -815,9 +823,7 @@ header nav ul a{
 
 
 .thumbnail .slide1 img, .thumbnail .slide2 img, .thumbnail .slide3 img, .thumbnail .slide4 img, .thumbnail .slide5 img, .thumbnail .slide6 img, .thumbnail .slide7 img, .thumbnail .slide8 img, .thumbnail .slide9 img, .thumbnail .slide10 img{
-  /* background-size: cover; */
   width: 128px;
-  /* height: auto; */
 }
 
 .slide-arrow{
@@ -898,13 +904,10 @@ header nav ul a{
     width: 30px;
     height: auto;
   }
-/*
-  .thumbnail{
-    width: auto;
-  } */
+
 
   .thumbnail .slide1 img, .thumbnail .slide2 img, .thumbnail .slide3 img, .thumbnail .slide4 img, .thumbnail .slide5 img, .thumbnail .slide6 img, .thumbnail .slide7 img, .thumbnail .slide8 img, .thumbnail .slide9 img, .thumbnail .slide10 img{
-    width: 70px;
+    width: 100%;
   }
 
   #concert .h3_2{
@@ -1023,16 +1026,20 @@ header nav ul a{
 }
 
 @media (max-width: 767px) {
-  #film h2{
+  #film{
     margin-right: 15px;
     margin-left: 15px;
+  }
+  #film h2{
+    /* margin-right: 15px;
+    margin-left: 15px; */
     padding-top: 55px;
   }
 
   #film h3{
     margin: 20px auto 0;
-    margin-right: 15px;
-    margin-left: 15px;
+    /* margin-right: 15px;
+    margin-left: 15px; */
     font-size: 14px;
   }
 
@@ -1040,31 +1047,28 @@ header nav ul a{
     display: none;
   }
 
-
   .filmimgdiv_resp{
     display: block;
     margin-top: 30px;
     margin-bottom: 70px;
-    /* margin-right: 15px;
-    margin-left: 15px; */
-    width: 400px;
+    width: 100%;
     margin: 30px auto 70px;
   }
 
   .filmimgdiv_resp img{
-    width: auto;
-    height: 140px;
+    width: 50%;
+    height: auto;
+  }
+  .filmimg1_resp{
+    text-align: center;
+  }
+  .img2, .img3{
+    margin-top: 20px;
   }
 
-  .filmgroup_resp{
+  /* .filmgroup_resp{
     display: flex;
-
-
-  }
-
-
-
-
+  } */
 }
 
 
@@ -1370,11 +1374,11 @@ header nav ul a{
   .book3text, .book2text, .book4text{
     margin-left: 0;
   }
-  .book1img img, .book3img img, .book2img img, .book4img{
+  .book1img img, .book3img img, .book2img img, .book4img img{
     margin-top: 30px;
     margin-left: 0;
   }
-  .book1img, .book3img, .book2img{
+  .book1img, .book3img, .book2img, .book4img{
     text-align: center;
   }
 
@@ -1617,9 +1621,9 @@ hr {
   }
 
   #concert2 .concert2content{
-    margin: 20px auto 70px;
-    margin-right: 15px;
-    margin-left: 15px;
+    margin: 20px 15px 70px;
+    /* margin-right: 15px;
+    margin-left: 15px; */
   }
 
   .concert2content h3{
@@ -1630,6 +1634,8 @@ hr {
   .concert2content img{
     margin-left: 15px;
     margin-bottom: 15px;
+    width: 140px;
+    height: 140px;
   }
 
   .concert2content h4{
