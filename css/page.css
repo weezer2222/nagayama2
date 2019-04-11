@@ -8,16 +8,24 @@ body{
 }
 
 a:visited, a:link{
-    color: #000;
+    color: #4c4747;
     text-decoration: none;
 }
 
 
-a:hover, a:active{
+/* a:hover, a:active{
     color: #ccc;
     text-decoration: none;
+} */
+
+a:hover, a:active{
+    color: orange;
+    text-decoration: none;
 }
 
+.current a{
+    color:orange;
+}
 
 
 .clone-nav {
@@ -84,12 +92,224 @@ header nav ul a{
   transform: translateX(-20px);
 } */
 
-#top h2{
+.webimg h2{
     width: auto;
     height: 100%;
     background-color: #FFF;
     text-align: center;
     margin: 80px auto 5px;
+}
+
+.respimg h2{
+    display: none;
+}
+
+
+#email i{
+  font-size: 14px;
+  padding-top: 3.5px;
+}
+
+/* レスポンシブ用ヘッダーのアイコン-------------------*/
+
+.mobile-text{
+    font-family: "Rounded Mplus 1c";
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    margin-left: 10px;
+    display: none;
+    left: 20px;
+    top: 12px;
+    position: absolute;
+}
+
+.mobile-text a{
+  text-decoration: none;
+  color: #4c4747;
+}
+
+.mobile-img{
+  right: 25px;
+  top: 8px;
+  display: none;
+  position: absolute;
+  z-index: 200;
+}
+
+.mobile-menu img{
+  width: 35px;
+  height: auto;
+}
+
+.mobile-close{
+  display: none;
+  position: absolute;
+  right: 25px;
+  top: 8px;
+}
+
+.mobile-close img{
+  width: 35px;
+  height: auto;
+}
+
+
+.sub_resp{
+  display: none;
+}
+
+/* スマホ用ヘッダー */
+@media (max-width: 767px){
+  header{
+    /* margin-top: -55px; */
+  }
+
+  .clone-nav{
+    display: none;
+  }
+
+  .beforeopen{
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 100;
+    border-bottom: solid 1px #b5b3b3;
+
+  }
+
+  .mobile-text{
+    display: block;
+  }
+
+  .mobile-img{
+    display: block;
+  }
+
+  header h1{
+    display: none;
+  }
+
+  header nav{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s, visibility 0s, ease 1s;
+  }
+
+  header nav.mobile-menu-open{
+    transition-delay: 0s;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav .container{
+    width:100%;
+    height: 100vh;
+    margin: 0;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .mobile-close{
+    display: block;
+    z-index: 150;
+  }
+
+  header nav ul{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    display: block;
+    margin-top: 100px;
+    padding: 50px 50px 50px;
+  }
+
+  header nav ul li.current a{
+    border-bottom: none;
+  }
+
+  a:hover, a:active{
+    text-decoration: none;
+  	opacity: 0.7;
+  }
+
+  #nav-open {
+    display:none;
+  }
+
+  .sublist{
+    display: none;
+  }
+
+  .sub_resp{
+    display: block;
+    margin-top: 0px;
+    padding: 20px 0 0 15px;
+  }
+
+  .sub_resp a{
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  ul.sub{
+    padding-top: 0px;
+  }
+
+  header nav ul{
+    padding: 10px 50px 130px;
+  }
+
+  header nav ul li{
+    padding-bottom: 20px;
+  }
+
+  header nav ul li.subconcert{
+    padding-bottom: 0px;
+  }
+
+  header nav ul li.subnagayama{
+    padding-bottom: 0px;
+  }
+
+  header nav ul li a{
+
+    font-size: 16px;
+
+  }
+
+  .webimg h2{
+    display: none;
+  }
+
+  .respimg h2{
+    display: block;
+    margin: 0px 15px 0px;
+    /* width: 100%; */
+    height: auto;
+    padding-top: 110px;
+  }
+
+  .respimg img{
+    width: 100%;
+  }
+
+  #email i{
+    font-size: 17px;
+    padding-top: 3.5px;
+  }
+
+
 }
 
 /* INTRODUCTION ----------------*/
@@ -176,10 +396,86 @@ header nav ul a{
 
 .partnerright img{
   width: auto;
-  height: 15px;
-  padding-right: 7px;
-  padding-top: 15px;
+  height: 30px;
+  padding-right: 10px;
+  /* padding-top: 15px; */
+  margin-bottom: -10px;
 }
+
+.partnerlink{
+  margin-bottom: -10px;
+}
+
+/* スマホ introduction */
+@media (max-width: 767px){
+  .overviewdiv{
+    margin-left: 15px;
+    margin-right: 15px;
+    display: block;
+    margin-top: 55px;
+    padding-top: 55px;
+    padding-bottom: 70px;
+    margin-bottom: 0;
+  }
+
+  .overviewleft{
+    margin-right: 0;
+  }
+
+  .overviewleft h3{
+    font-size: 14px;
+
+  }
+
+  .overviewimg{
+    text-align: center;
+  }
+
+  .overviewimg img{
+    padding-top: 30px;
+  }
+
+
+  .partnerdiv{
+    flex-direction: column-reverse;
+    margin-left: 15px;
+    margin-right: 15px;
+    /* display: block; */
+    padding-top: 55px;
+    padding-top: 55px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 70px;
+  }
+
+  .partnerright{
+    margin-left: 15px;
+  }
+
+  .partnerimg{
+    text-align: center;
+  }
+
+  .partnerimg img{
+    margin-left: 0px;
+    margin-top:40px
+  }
+
+  .partnerright h3{
+    font-size: 14px;
+  }
+
+  .partnerright img{
+    margin-bottom: -5px;
+    height: 20px;
+  }
+
+
+
+
+
+}
+
 
 /* INTRODUCTION2 Nagayama------------------------------------ */
 
@@ -192,8 +488,8 @@ header nav ul a{
   margin-left: 200px;
   margin-right: 200px;
   display: flex;
-  margin: 20px auto;
-  margin-top: 90px;
+  margin: 0px auto 20px;
+  /* margin-top: 90px; */
   padding-top: 120px;
   padding-bottom: 120px;
   max-width: 900px;
@@ -217,8 +513,17 @@ header nav ul a{
   /* margin-top: 20px; */
   line-height: 1.8em;
 }
+
+.otanitext{
+  /* font-style: italic; */
+  font-size: 15px;
+  letter-spacing: 0.2rem;
+
+}
+
 .otaniname{
   text-align: right;
+
 }
 
 .otaniimg img{
@@ -259,6 +564,7 @@ header nav ul a{
     color: #4c4747;
     letter-spacing: 0.1rem;
     text-decoration: none;
+
 }
 
 .nagayamaright h3{
@@ -311,6 +617,127 @@ header nav ul a{
   margin-left: 100px;
 }
 
+.intro2book h2{
+    font-family: "Rounded Mplus 1c";
+    font-size: 22px;
+    font-weight: 500;
+    color: #4c4747;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    padding-top: 90px;
+    text-align: center;
+}
+
+/* スマホ introduction2 */
+@media (max-width: 767px) {
+  .otanidiv{
+    display: block;
+    margin-left: 15px;
+    margin-right: 15px;
+    /* margin-top: 50px; */
+    padding-top: 110px;
+    padding-bottom: 70px;
+    margin-bottom: 0;
+  }
+
+  .otanileft{
+    margin-right: 0;
+  }
+
+  .otaniname{
+    font-size: 14px;
+  }
+
+  .otaniimg{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .nagayamadiv{
+    padding-top: 55px;
+    margin: 0px 15px 0px;
+    flex-direction: column-reverse;
+    padding-bottom: 70px;
+  }
+
+  .nagayamaright{
+    margin-left: 0;
+  }
+  .nagayamaright h3{
+    font-size: 14px;
+  }
+  .nagayamaimg{
+    text-align: center;
+  }
+  .nagayamaimg img{
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .intro2book h2{
+    padding-top: 55px;
+  }
+
+  .introbook1{
+    display: block;
+    margin: 0 15px 0;
+    margin-top: 30px;
+  }
+
+  .introbook1text h2{
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .introbook1img{
+    text-align: center;
+  }
+
+  .introbook1img img{
+    margin-top: 20px;
+  }
+
+  .introbook1text{
+    font-size: 14px;
+  }
+  .introbook2{
+    flex-direction: column-reverse;
+    margin: 0 15px 0;
+    /* margin-top: 30px; */
+    padding-top: 0;
+    padding-bottom: 70px;
+  }
+  .introbook2img{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .introbook2img img{
+    margin-left: 0px;
+  }
+  .introbook2text{
+    margin-left: 0px;
+  }
+  .introbook2text{
+    font-size: 14px;
+  }
+  .introbook2text h2{
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  /* .intro2book h2{
+    text-align: left;
+    margin-left: 15px;
+  } */
+
+
+
+
+
+}
+
 /* chilidren in peru--------------------- */
 
 .comingsoon {
@@ -318,6 +745,15 @@ header nav ul a{
   margin-top: 20px;
   font-size: 14px;
 }
+
+/* スマホ peru.html */
+@media (max-width: 767px) {
+  .comingsoon{
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
 
 /* CONCERT ----------------*/
 #concert {
@@ -340,12 +776,13 @@ header nav ul a{
 #concert .h3_1{
   text-align: left;
   margin: 50px auto;
-  width: 800px;
+  /* width: 800px; */
+  max-width: 800px;
 }
 
 /* スライドショー */
 .slick{
-    width: 800px;
+    max-width: 800px;
     /* height: 500px; */
     /* position: absolute; */
     margin: auto;
@@ -358,7 +795,7 @@ header nav ul a{
 
 .thumbnail{
   margin: auto;
-  width: 800px;
+  max-width: 800px;
   /* height: 250px; */
   left: 0;
   top: 0;
@@ -386,27 +823,25 @@ header nav ul a{
 .slide-arrow{
   position: absolute;
   top: 50%;
-  margin-top: -15px;
+  margin-top: -20px;
 }
 
 .prev-arrow{
-  left: -45px;
-  width: 0;
-  height: 0;
-  color:orange;
+  left: -25px;
+  width: 45px;
+  height: auto;
+  z-index: 1;
 }
 
 .next-arrow{
-  right: -30px;
-  width: 0;
-  height: 0;
-  color:orange;
-
+  right: -24px;
+  width: 45px;
+  height: auto;
 }
 
-.fas{
+/* .fas{
   font-size: 30px;
-}
+} */
 
 .thumbnail .slick-slide:not(.slick-center) {
   -webkit-filter: opacity(70%);
@@ -420,11 +855,68 @@ header nav ul a{
 #concert .h3_2{
   text-align: left;
   margin: 0px auto;
-  width: 800px;
+  max-width: 800px;
   margin-top: 30px;
   padding-bottom: 120px;
+}
+
+#concert .h3_2 a{
+  color: orange;
+}
+
+/*スマホ concert.html  */
+@media (max-width: 767px) {
+  #concert h2{
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 55px;
+    padding-top: 55px;
+  }
+
+  #concert .h3_1{
+    margin: 20px auto 30px;
+    /* width: 437px; */
+    font-size: 14px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .slick{
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .prev-arrow{
+    left: -10px;
+    width: 30px;
+    height: auto;
+    z-index: 1;
+  }
+
+  .next-arrow{
+    right: -9px;
+    width: 30px;
+    height: auto;
+  }
+/*
+  .thumbnail{
+    width: auto;
+  } */
+
+  .thumbnail .slide1 img, .thumbnail .slide2 img, .thumbnail .slide3 img, .thumbnail .slide4 img, .thumbnail .slide5 img, .thumbnail .slide6 img, .thumbnail .slide7 img, .thumbnail .slide8 img, .thumbnail .slide9 img, .thumbnail .slide10 img{
+    width: 70px;
+  }
+
+  #concert .h3_2{
+    font-size: 14px;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-bottom: 70px;
+  }
+
 
 }
+
 
 /* 映画 -------------------*/
 #film {
@@ -451,6 +943,10 @@ header nav ul a{
   text-align: left;
   margin: 50px auto;
   /* width: 900px; */
+}
+
+#film h3 a{
+  color: orange;
 }
 
 .filmimgdiv{
@@ -522,6 +1018,55 @@ header nav ul a{
   margin-bottom: 120px; */
 }
 
+.filmimgdiv_resp{
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #film h2{
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-top: 55px;
+  }
+
+  #film h3{
+    margin: 20px auto 0;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 14px;
+  }
+
+  .filmimgdiv{
+    display: none;
+  }
+
+
+  .filmimgdiv_resp{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    /* margin-right: 15px;
+    margin-left: 15px; */
+    width: 400px;
+    margin: 30px auto 70px;
+  }
+
+  .filmimgdiv_resp img{
+    width: auto;
+    height: 140px;
+  }
+
+  .filmgroup_resp{
+    display: flex;
+
+
+  }
+
+
+
+
+}
+
 
 /* Action ----------------*/
 
@@ -557,6 +1102,10 @@ header nav ul a{
 .eventleft h3{
   margin-top: 20px;
   line-height: 1.8em;
+}
+
+.eventleft h3 a{
+  color: orange;
 }
 
 .eventimg img{
@@ -605,6 +1154,12 @@ header nav ul a{
     text-decoration: none;
 }
 
+.charityright .type{
+  margin-top: 5px;
+  margin-left: 15px;
+
+}
+
 #book{
   background-color: rgb(240,239,239);
 }
@@ -627,16 +1182,13 @@ header nav ul a{
 }
 
 .book1{
-  /* margin-left: 200px; */
   margin-right: 200px;
   display: flex;
   margin: 20px auto;
-  /* margin-top: 90px; */
   padding-top: 0px;
   margin-top: 60px;
   padding-bottom: 50px;
   max-width: 900px;
-
 }
 
 .book1img img{
@@ -695,11 +1247,8 @@ header nav ul a{
 }
 
 .book4{
-  /* margin-left: 200px; */
-  /* margin-right: 200px; */
   display: flex;
   margin: 20px auto;
-  /* margin-top: 90px; */
   padding-top: 50px;
   padding-bottom: 120px;
   max-width: 900px;
@@ -711,7 +1260,6 @@ header nav ul a{
 }
 
 .book4text{
-  /* margin-right: 100px; */
   margin-left: 100px;
 }
 
@@ -720,24 +1268,18 @@ header nav ul a{
 }
 
 .voldiv{
-  /* margin-left: 200px;
-  margin-right: 200px; */
   display: flex;
   margin: 20px auto;
-  /* margin-top: 90px; */
   padding-top: 120px;
   padding-bottom: 120px;
   max-width: 900px;
 }
 
 .volimg img{
-  /* margin-le: ;ft: 300px; */
-  /* margin-left: 330px; */
   margin-top: 50px;
 }
 
 .volright{
-  /* margin-right: 250px; */
   margin-left: 100px;
 }
 
@@ -755,6 +1297,134 @@ header nav ul a{
     text-decoration: none;
 }
 
+.volright h3 a{
+  color: orange;
+}
+
+/* スマホ　join.html */
+@media (max-width: 767px) {
+  .eventdiv{
+    margin-top: 55px;
+    padding-top: 55px;
+    display: block;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 70px;
+    margin-bottom: 0px;
+  }
+  .eventleft{
+    margin-right: 0px;
+  }
+  .eventleft h3{
+    font-size: 14px;
+  }
+  .eventimg{
+    text-align: center;
+  }
+  .eventimg img{
+    margin-top: 30px;
+  }
+
+  .charitydiv{
+    flex-direction: column-reverse;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 55px;
+    padding-bottom: 70px;
+  }
+  .charityright{
+    margin-left: 0px;
+  }
+
+  .charityright h3{
+    font-size: 14px;
+  }
+  .charityimg img{
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  .charityimg{
+    text-align: center;
+  }
+
+  #book h1{
+    padding-top: 55px;
+    margin-top: 0px;
+  }
+  .introtext h2{
+    font-size: 14px;
+  }
+  .book1{
+    margin-right: 0px;
+    display: block;
+    margin-top: 30px;
+    padding-bottom: 55px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+  .book1text h2, .book3text h2, .book2text h2, .book4text{
+    margin-right: 0px;
+    font-size: 14px;
+  }
+  .book3text, .book2text, .book4text{
+    margin-left: 0;
+  }
+  .book1img img, .book3img img, .book2img img, .book4img{
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  .book1img, .book3img, .book2img{
+    text-align: center;
+  }
+
+  .book2{
+    flex-direction: column-reverse;
+    margin: 0 15px 55px 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+  }
+  .book3{
+    margin-right: 0px;
+    display: block;
+    margin-top: 30px;
+    padding-bottom: 55px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+  .book4{
+    flex-direction: column-reverse;
+    margin: 0 15px 70px 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+  }
+
+  .voldiv{
+    flex-direction: column-reverse;
+    margin: 0px 15px 70px;
+    padding-top: 55px;
+    padding-bottom: 0px;
+  }
+
+  .volright{
+    margin-left: 0px;
+  }
+  .volright h3{
+    font-size: 14px;
+  }
+  .volimg img{
+    margin-top: 30px;
+  }
+  .volimg{
+    text-align: center;
+  }
+
+}
+
 /* NEWS ----------------*/
 #news {
   background-color: #fff;
@@ -764,7 +1434,7 @@ header nav ul a{
 #news h2{
   text-align: center;
   /* margin-top: 90px; */
-  padding-top: 80px;
+  padding-top: 110px;
   font-family: "Rounded Mplus 1c";
   font-size: 22px;
   font-weight: 500;
@@ -777,7 +1447,7 @@ header nav ul a{
 #news .newscontent{
   text-align: left;
   margin: 50px auto 70px;
-  width: 800px;
+  max-width: 800px;
 }
 
 .date{
@@ -796,7 +1466,7 @@ header nav ul a{
 }
 
 .newscontent img{
-  width: 600px;
+  max-width: 600px;
   height: auto;
 
 }
@@ -804,12 +1474,40 @@ header nav ul a{
   margin-top: 40px;
 }
 
+.newsimg{
+  text-align: center;
+}
+
+
 hr {
    margin-top: 50px;
    margin-right: 250px;
    margin-left: 250px;
    border: 1px solid #eee;
    margin-bottom: 40px;
+}
+
+/* スマホ news.html */
+@media (max-width: 767px) {
+  #news{
+    margin-bottom: 0px;
+  }
+  #news .newscontent{
+    margin: 50px 15px 70px;
+  }
+  .newscontent h3{
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .newscontent img{
+    width:100%;
+
+  }
+  .newscontent h4{
+    margin-top: 30px;
+    font-size: 14px;
+  }
+
 }
 
 /* CONCERT2 Archives ----------------*/
@@ -821,7 +1519,7 @@ hr {
 #concert2 h2{
   text-align: center;
   /* margin-top: 90px; */
-  padding-top: 80px;
+  padding-top: 110px;
   font-family: "Rounded Mplus 1c";
   font-size: 22px;
   font-weight: 500;
@@ -834,7 +1532,7 @@ hr {
 #concert2 .concert2content{
   text-align: left;
   margin: 50px auto 70px;
-  width: 800px;
+  max-width: 800px;
 }
 
 .year{
@@ -866,7 +1564,9 @@ hr {
   text-decoration: none;
 
 } */
-
+.concert2content .pdf{
+  color: orange;
+}
 
 .concert2content h3{
   font-size: 20px;
@@ -879,8 +1579,9 @@ hr {
   /* text-align: center; */
   /* display: flex; */
   justify-content: space-between;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  /* margin-right: 10px; */
+  margin-left: 25px;
+  margin-bottom: 25px;
   width: 160px;
   height: 160px;
   object-fit: cover;
@@ -908,6 +1609,36 @@ hr {
    margin: 0 auto 40px;
    border: 1px solid #eee;
    /* margin-bottom: 40px; */
+}
+
+@media (max-width: 767px) {
+  #concert2{
+    margin-bottom: 70px;
+  }
+
+  #concert2 .concert2content{
+    margin: 20px auto 70px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .concert2content h3{
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .concert2content img{
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+
+  .concert2content h4{
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+
+
 }
 
 /* ドロップダウンメニュー-------------------- */
@@ -942,6 +1673,14 @@ ul.sub {
 }
 li.subconcert ul.sub{
   width: 140px;
+}
+
+li.subconcert2 ul.sub{
+  width: 140px;
+}
+
+li.subconcert2 a{
+  color: orange;
 }
 
 ul.sub li a {

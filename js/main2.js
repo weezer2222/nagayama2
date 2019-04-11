@@ -14,8 +14,8 @@ $(function(){
    fade:true, //スライドをフェードで切り替え
    speed:1500,
    pauseOnHover: false,//ホバーしたときにスライドショー止まるか
-   prevArrow:'<div class="slide-arrow prev-arrow"><i class="fas fa-angle-left"></i></div>',
-   nextArrow:'<div class="slide-arrow next-arrow"><i class="fas fa-angle-right"></i></div>',
+   prevArrow:'<div class="slide-arrow prev-arrow"><img src="./img/leftarrow.svg" alt=""></div>',
+   nextArrow:'<div class="slide-arrow next-arrow"><img src="./img/rightarrow.svg" alt=""></div>',
  });
  $('.thumbnail').slick({
    asNavFor:'.slick',

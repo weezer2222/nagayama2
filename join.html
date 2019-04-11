@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>参加・支援の方法 | 永山こども基金</title>
+  <title>参加・支援の方法 | 永山子ども基金</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
   <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
@@ -15,21 +15,51 @@
 <body>
 
   <header>
+    <div class="beforeopen">
+      <div class="mobile-menu">
+        <div class="mobile-text">
+          <a href="./index.html">永山子ども基金</a>
+        </div>
+        <div class="mobile-img">
+          <img src="./img/menu.svg" alt="">
+        </div>
+      </div>
+    </div>
+
     <nav>
       <div class="container">
+        <div class="mobile-close">
+          <img src="./img/close.svg" alt="">
+        </div>
+
         <ul class="menu">
           <li><a href="./index.html">ホーム</a></li>
-          <li><a>永山こども基金とは</a>
-            <ul class="sub">
-              <li><a href="./introduction.html">永山こども基金について</a></li>
+
+          <li class="subnagayama"><a>永山子ども基金とは</a>
+            <div class="sublist">
+              <ul class="sub">
+                <li><a href="./introduction.html">永山子ども基金について</a></li>
+                <li><a href="./introduction2.html">永山則夫さんについて</a></li>
+              </ul>
+            </div>
+
+            <ul class="sub_resp">
+              <li><a href="./introduction.html">永山子ども基金について</a></li>
               <li><a href="./introduction2.html">永山則夫さんについて</a></li>
             </ul>
           </li>
 
-          <li><a href="./peru.html">ペルーのこどもたち</a></li>
+          <li><a href="./peru.html">ペルーの子どもたち</a></li>
 
           <li class="subconcert"><a>活動内容</a>
-            <ul class="sub">
+            <div class="sublist">
+              <ul class="sub">
+                <li><a href="./concert.html">活動の紹介</a></li>
+                <li><a href="./concert2.html">過去のコンサート</a></li>
+              </ul>
+            </div>
+
+            <ul class="sub_resp">
               <li><a href="./concert.html">活動の紹介</a></li>
               <li><a href="./concert2.html">過去のコンサート</a></li>
             </ul>
@@ -37,19 +67,30 @@
 
           <li><a href="./join.html">参加・支援の方法</a></li>
 
-          <li><a href="./news.html">お知らせ</a></li>
+          <li><a href="./news.html">お知らせ</a>
+          </li>
 
-          <li><a href="https://www.facebook.com/nagayamakodomo/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://www.facebook.com/nagayamakodomo/" target="_blank"><i class="fab fa-facebook"></i></a>
+          </li>
+
+          <li id="email"><a href="mailto:nagayama@chehemmi.sakura.ne.jp"><i class="fas fa-envelope-square square"></i></a></li>
         </ul>
       </div>
     </nav>
   </header>
 
   <section id="top">
-    <!-- <h1><a href="#"><img src="./img/main.png" alt=""></a></h1> -->
-    <h2>
-      <img src="./img/action_pachamama.png" alt="">
-    </h2>
+    <div class="webimg">
+      <h2>
+        <img src="./img/join_main.png" alt="">
+      </h2>
+    </div>
+    <div class="respimg">
+      <h2>
+        <img src="./img/intro_4_resp.png" alt="">
+      </h2>
+    <div>
+
   </section>
 
   <section id="event">
@@ -79,12 +120,18 @@
               <h2>
                 募金する
               </h2>
-              <h3>ペルーで働きながら学ぶこどもたちへ<br>
-              ご寄付は、こちらの口座までご送金ください。<br><br>ゆうちょ銀行<br><u>窓口</u>&nbsp;&nbsp;&nbsp;口座番号：00190-3-183590<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;口座名：永山こども基金<br>
-              <u>電信</u>&nbsp;&nbsp;
-              口座番号（当座）：〇一九店　183590<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;口座名：ナカ゛ヤマコト゛モキキン</h3>
+              <h3>ペルーで働きながら学ぶ子どもたちへ<br>
+              ご寄付は、こちらの口座までご送金ください。<br><br>＜ゆうちょ銀行＞<br>
+              <div class="type">
+                <u>窓口<br></u>口座番号：00190-3-183590<br>
+                口座名：永山子ども基金<br>
+              </div>
+              <div class="type">
+                <u>電信</u><br>
+                口座番号（当座）：〇一九店　183590<br>
+                口座名：ナカ゛ヤマコト゛モキキン
+              </div>
+              </h3>
             </div>
         </div>
       </section>
@@ -160,11 +207,12 @@
               ボランティアに参加する
             </h2>
             <h3>永山子ども基金では、スタッフを募集しております。『楽しくなければ、ボランティアではない！』と代表の言葉！
-難しく考えずに気楽に参加してください。月１回の会議他、特に会費や規定はありません。
-興味がある方は下記のアドレスまでお問い合わせください。<br>
-<a href="mailto:nagayama@chehemmi.sakura.ne.jp">nagayama@chehemmi.sakura.ne.jp</a>
-<br><br>
-スタッフブログは<a href="https://kawachichizuru.com/" target="_blank"><U>こちら</U></a></h3>
+            難しく考えずに気楽に参加してください。月１回の会議他、特に会費や規定はありません。
+            興味がある方は下記のアドレスまでお問い合わせください。<br>
+            <a href="mailto:nagayama@chehemmi.sakura.ne.jp">nagayama@chehemmi.sakura.ne.jp</a>
+            <br><br>
+            スタッフブログは<a href="https://kawachichizuru.com/" target="_blank">こちら</a>
+            </h3>
           </div>
       </div>
     </section>

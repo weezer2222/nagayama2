@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ホーム | 永山こども基金</title>
+  <title>ホーム | 永山子ども基金</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
   <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
@@ -17,23 +17,51 @@
 
   <header>
 
-      <h1><a href="./index.html">永山こども基金</a></h1>
+    <h1><a href="./index.html">永山子ども基金</a></h1>
 
+    <div class="beforeopen">
+      <div class="mobile-menu">
+        <div class="mobile-text">
+          <a href="./index.html">永山子ども基金</a>
+        </div>
+        <div class="mobile-img">
+          <img src="./img/menu.svg" alt="">
+        </div>
+      </div>
+    </div>
 
     <nav>
       <div class="container">
+        <div class="mobile-close">
+          <img src="./img/close.svg" alt="">
+        </div>
+
         <ul class="menu">
-          <li><a>永山こども基金とは</a>
-            <ul class="sub">
-              <li><a href="./introduction.html">永山こども基金について</a></li>
+          <li class="subnagayama"><a>永山子ども基金とは</a>
+            <div class="sublist">
+              <ul class="sub">
+                <li><a href="./introduction.html">永山子ども基金について</a></li>
+                <li><a href="./introduction2.html">永山則夫さんについて</a></li>
+              </ul>
+            </div>
+
+            <ul class="sub_resp">
+              <li><a href="./introduction.html">永山子ども基金について</a></li>
               <li><a href="./introduction2.html">永山則夫さんについて</a></li>
             </ul>
           </li>
 
-          <li><a href="./peru.html">ペルーのこどもたち</a></li>
+          <li><a href="./peru.html">ペルーの子どもたち</a></li>
 
           <li class="subconcert"><a>活動内容</a>
-            <ul class="sub">
+            <div class="sublist">
+              <ul class="sub">
+                <li><a href="./concert.html">活動の紹介</a></li>
+                <li><a href="./concert2.html">過去のコンサート</a></li>
+              </ul>
+            </div>
+
+            <ul class="sub_resp">
               <li><a href="./concert.html">活動の紹介</a></li>
               <li><a href="./concert2.html">過去のコンサート</a></li>
             </ul>
@@ -46,6 +74,8 @@
 
           <li><a href="https://www.facebook.com/nagayamakodomo/" target="_blank"><i class="fab fa-facebook"></i></a>
           </li>
+
+          <li id="email"><a href="mailto:nagayama@chehemmi.sakura.ne.jp"><i class="fas fa-envelope-square square"></i></a></li>
         </ul>
       </div>
     </nav>
@@ -56,16 +86,13 @@
       <h2>
         <div class="slider">
             <div class="slide1"><a href="./introduction.html"><img src="./img/home_pachamama.png" alt=""></a></div>
-            <div class="slide2"><a href="#"><img src="./img/home_children.png" alt=""></a></div>
+            <div class="slide2"><a href="./peru.html"><img src="./img/home_children.png" alt=""></a></div>
             <div class="slide3"><a href="./concert.html"><img src="./img/home_concert.png" alt=""></a></div>
-            <div class="slide4"><a href="./join.html"><img src="./img/home_pachamama2.png" alt=""></a></div>
+            <div class="slide4"><a href="./join.html"><img src="./img/intro_4_web.png" alt=""></a></div>
         </div>
       </h2>
     </section>
 
-    <!-- <section id="button">
-      <h3><a href="#"><img src="./img/詳しく見る.png" alt=""></a></h3>
-    </section> -->
     <div class=newsbox>
       <h3>お知らせ</h3>
       <div class=newsbox1>
@@ -75,28 +102,59 @@
         <a href="./news.html#news2" ><p>2018.12.3　「第３３回　東京弁護士会人権賞」を受賞しました</p></a>
       </div>
     </div>
+  </div>
+
+  <div class="main_resp">
+    <div class="mainimg">
+        <div class="maincard">
+          <a href="./introduction.html"><img src="./img/intro_1.png" alt=""></a>
+        </div>
+        <div class="maintitle">
+          <a href="./introduction.html" target="_blank"><img src="./img/rightarrow.svg" alt="">詳しく見る</a>
+        </div>
+
+        <div class="maincard">
+          <a href="./peru.html"><img src="./img/peru_top.png" alt=""></a>
+        </div>
+        <div class="maintitle">
+          <a href="./peru.html" target="_blank"><img src="./img/rightarrow.svg" alt="">ペルーの働く子どもたちについて知る</a>
+        </div>
 
 
+        <div class="maincard">
+          <a href="./concert.html"><img src="./img/concert_top.png" alt=""></a>
+        </div>
+        <div class="maintitle">
+          <a href="./concert.html" target="_blank"><img src="./img/rightarrow.svg" alt="">活動内容を見る</a>
+        </div>
 
+        <div class="maincard">
+          <a href="./join.html"><img src="./img/intro_4_resp.png" alt=""></a>
+        </div>
+        <div class="maintitle">
+          <a href="./join.html" target="_blank"><img src="./img/rightarrow.svg" alt="">詳しく見る</a>
+        </div>
 
+    </div>
+
+    <div class="newsbox_resp">
+      <h3>お知らせ</h3>
+      <div class="newsbox1">
+        <a href="./news.html#news1" ><p>2019.4.1　ウェブサイトをリニューアルしました</p></a>
+      </div>
+      <div class="newsbox2">
+        <a href="./news.html#news2" ><p>2018.12.3　「第３３回　東京弁護士会人権賞」を受賞しました</p></a>
+      </div>
+    </div>
 
 
   </div>
 
-    <!-- <footer>
-      <nav>
-        <ul>
-          <li>DOT1</li>
-          <li>DOT2</li>
-          <li>DOT3</li>
-          <li>DOT4</li>
-        </ul>
-      </nav>
-    </footer> -->
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/main.js"></script>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>

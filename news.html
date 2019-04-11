@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>お知らせ | 永山こども基金</title>
+  <title>お知らせ | 永山子ども基金</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
   <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
@@ -15,21 +15,51 @@
 <body>
 
   <header>
+    <div class="beforeopen">
+      <div class="mobile-menu">
+        <div class="mobile-text">
+          <a href="./index.html">永山子ども基金</a>
+        </div>
+        <div class="mobile-img">
+          <img src="./img/menu.svg" alt="">
+        </div>
+      </div>
+    </div>
+
     <nav>
       <div class="container">
+        <div class="mobile-close">
+          <img src="./img/close.svg" alt="">
+        </div>
+
         <ul class="menu">
           <li><a href="./index.html">ホーム</a></li>
-          <li><a>永山こども基金とは</a>
-            <ul class="sub">
-              <li><a href="./introduction.html">永山こども基金について</a></li>
+
+          <li class="subnagayama"><a>永山子ども基金とは</a>
+            <div class="sublist">
+              <ul class="sub">
+                <li><a href="./introduction.html">永山子ども基金について</a></li>
+                <li><a href="./introduction2.html">永山則夫さんについて</a></li>
+              </ul>
+            </div>
+
+            <ul class="sub_resp">
+              <li><a href="./introduction.html">永山子ども基金について</a></li>
               <li><a href="./introduction2.html">永山則夫さんについて</a></li>
             </ul>
           </li>
 
-          <li><a href="./peru.html">ペルーのこどもたち</a></li>
+          <li><a href="./peru.html">ペルーの子どもたち</a></li>
 
           <li class="subconcert"><a>活動内容</a>
-            <ul class="sub">
+            <div class="sublist">
+              <ul class="sub">
+                <li><a href="./concert.html">活動の紹介</a></li>
+                <li><a href="./concert2.html">過去のコンサート</a></li>
+              </ul>
+            </div>
+
+            <ul class="sub_resp">
               <li><a href="./concert.html">活動の紹介</a></li>
               <li><a href="./concert2.html">過去のコンサート</a></li>
             </ul>
@@ -37,19 +67,18 @@
 
           <li><a href="./join.html">参加・支援の方法</a></li>
 
-          <li><a href="./news.html">お知らせ</a></li>
+          <li><a href="./news.html">お知らせ</a>
+          </li>
 
-          <li><a href="https://www.facebook.com/nagayamakodomo/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://www.facebook.com/nagayamakodomo/" target="_blank"><i class="fab fa-facebook"></i></a>
+          </li>
+
+          <li id="email"><a href="mailto:nagayama@chehemmi.sakura.ne.jp"><i class="fas fa-envelope-square square"></i></a></li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <!-- <section id="top">
-    <h2>
-      <img src="./img/concert_top.png" alt="">
-    </h2>
-  </section> -->
 
   <section id="news">
     <h2>
@@ -57,27 +86,48 @@
     </h2>
 
     <div class=newscontent>
-    <div class="date">2019.4.1</div>
-    <h3 id="news1">
-      ウェブサイトをリニューアルしました
-    </h3>
-    <img src="./img/home_pachamama.png" alt="">
-    <h4>
-      ウェブサイトをリニューアルしました。永山こども基金の活動内容の紹介や、活動への参加方法など、掲載情報も一新しました。今後、過去のコンサート写真等も随時追加予定です。
-    </h4>
+      <div class="date">2019.4.1</div>
+      <h3 id="news1">
+        ウェブサイトをリニューアルしました
+      </h3>
+      <div class="newsimg">
+        <img src="./img/intro_pachamama.png" alt="">
+      </div>
+      <h4>
+        ウェブサイトをリニューアルしました。永山子ども基金の活動内容の紹介や、活動への参加方法など、掲載情報も一新しました。今後、過去のコンサート写真等も随時追加予定です。
+      </h4>
     </div>
 
     <hr>
 
     <div class=newscontent>
-    <div class="date">2018.12.3</div>
-    <h3 id="news2">
-      「第３３回　東京弁護士会人権賞」を受賞しました
-    </h3>
-    <img src="./img/news_award.jpg" alt="">
-    <h4>
-      人権擁護活動に尽力した団体に授与される、「第３３回　東京弁護士会人権賞」を受賞しました。東京弁護士会より、以下コメントをいただきました。<br><br>「永山子ども基金」の長年の活動を支えた強い思いには、ペルーの子どもたちとの交流で生まれた彼らの活動に対する連帯感に加え、永山裁判・判決、そこでの少年犯罪に対する司法の対応、死刑制度そのものに対する疑念があった。犯罪に及ぶ原因・動機は様々であるが、置かれた社会・家庭環境を抜きに語れない犯罪も多く、犯罪者を極刑に処して何が解決されるのか、さらには冤罪もしばしば生まれる状況にあって死刑制度を存続させていいのか、「永山子ども基金」は市民に対しこうした問題提起を行ってきた。このように「永山子ども基金」の活動はそのこと自体意義のあるものである。
-    </h4>
+      <div class="date">2018.12.3</div>
+      <h3 id="news2">
+        「第３３回　東京弁護士会人権賞」を受賞しました
+      </h3>
+      <div class="newsimg">
+        <img src="./img/news_award.jpg" alt="">
+      </div>
+      <h4>
+        人権擁護活動に尽力した団体に授与される、「第３３回　東京弁護士会人権賞」を受賞しました。<br><br>
+
+        ＜大谷恭子弁護士の挨拶文＞<br>
+        2019年1月11日、「東京弁護士会人権賞」授賞式―弁護士会館二階講堂（クレオ）にて<br><br>
+
+        大谷：永山くんは死刑になる直前に、「貧しい子ども達、とくにペルーの子ども達に、印税を使ってほしい」と遺言を残しました。私が永山くんの遺骨を引き取りに行った時に、刑務官から「遺言があります」と言われて、驚きました。
+        永山くんは最期の瞬間まで、貧しい人達のことを思っていたのでしょう。<br><br>
+        私達は、印税を送るもととして基金を立ち上げました。
+        永山くんが印税を意識したのは、『無知の涙』を執筆した時だったのでしょう。『無知の涙』の原型となったのは、彼が、なぜ人を殺めてしまったのか？を問い、書いた、漢字の練習帳のようなノートでした。それが出版されて、印税は被害者の家族に送られました。<br><br>
+        （死刑囚となっても）永山くんの原稿用紙は、床から（高さ）１メートル以上に達していました。しかし死刑が確定していたので、厳しい管理下におかれ、それらの原稿が外に出ることはなかったのです。（後に私達は）それらを出版しました。彼の遺言通りに、ペルーの子ども達、つまり路上の子ども達、働く子ども達に印税を送りました。（永山くんが指していたのは）アフリカで飢えている子ども達ではなかったようです。<br><br>
+        印税がなくなってからは、私達はコンサートを行い、その収益金をペルーの働く子ども達に送金しています。
+        今回の受賞にあたり、ペルーの子ども達が本当に喜んでくれています。「永山は死刑の瞬間まで（自分達を）忘れないでいてくれた、思い出してくれた」と。<br><br>
+        この賞は、当時、永山くんに対して「生きろ」と言ってくれたマスコミ、「もう一度裁判をやり直す」と言ってくれた弁護士の方々にささげます。石川先生は精神鑑定をしてくれました。精神鑑定でいうところの「PTSD」「心神耗弱」は最終的に裁判では受け入れられずでしたが…しかし、東京高裁の船田裁判長はこれを受け入れてくれました。このかん、多くの人達が、「生きろ」「生きるための裁判をしよう」と言ってくれたのです。今回の受賞は、「生きろ」と一度でも声をかけてくれた方々にささげます。<br><br>
+        ペルーの子ども達は「僕達は、永山くんのようにはならない」と言います。<br>
+        この活動をするにあたり、若いスタッフの方々、名刺広告に協力してくれた弁護士の方々。1968年の事件を、若い人達と…ちょうどあの時の永山くんと同じ年代の若い人達が北千住パブリック（弁護士事務所）にいました。彼らも、それぞれの永山くんと出会って、一生懸命にやっています。
+        人を殺す不条理さも共有したいです。今年に行う永山基金のコンサートでは、片山さんと「被害」と「加害」について話し合いたいです。<br><br>
+        この受賞を、永山くんも喜んでくれていると思う。彼は貧しい子ども達の塾を作りたいと言っていたのです。<br>
+        永山くんに代わって「ありがとう」と言います。ありがとうございました。
+      </h4>
     </div>
 
   </section>
